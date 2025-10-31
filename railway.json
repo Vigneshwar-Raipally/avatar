@@ -1,0 +1,18 @@
+{
+  "deploy": {
+    "restartPolicyType": "ON_FAILURE",
+    "sleepApplication": false,
+    "numReplicas": 1
+  },
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "environments": {
+    "production": {
+      "variables": {
+        "PYTHON_VERSION": "3.11",
+        "PORT": "5001"
+      }
+    }
+  }
+}
